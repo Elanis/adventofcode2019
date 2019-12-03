@@ -4,14 +4,14 @@ using System.IO;
 namespace AdventOfCode2019 {
 	public class Day_1_1 {
 		public Day_1_1() {
-			string[] lines = File.ReadAllLines("exercise_1_1.txt");
+			string[] lines = File.ReadAllLines("inputs/exercise_1_1.txt");
 
 			int total = 0;
 			foreach (string line in lines) {
-				total += Day_1_1.CalcFuelFromMass(int.Parse(line));
+				total += CalcFuelFromMass(int.Parse(line));
 			}
 
-			Console.WriteLine(total);
+			Console.WriteLine("Day 1 - Exercise 1: " + total);
 		}
 
 		public static int CalcFuelFromMass(int mass) {
