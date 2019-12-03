@@ -9,6 +9,7 @@ namespace AdventOfCode2019 {
 
 			// Day 2
 			new Day_2_1();
+			new Day_2_2();
 
 			Console.Read();
 		}
