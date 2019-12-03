@@ -18,18 +18,11 @@ namespace AdventOfCode2019 {
 			int newMass = mass;
 			int fuelCost = 0;
 
-			while ((newMass = CalcFuelFromMass(newMass)) > 0) {
+			while ((newMass = Day_1_1.CalcFuelFromMass(newMass)) > 0) {
 				fuelCost += newMass;
 			}
 
 			return fuelCost;
-		}
-
-		public static int CalcFuelFromMass(int mass) {
-			return (int)(
-				Math.Floor(mass / 3.0f)
-				- 2.0
-			);
 		}
 	}
 }
